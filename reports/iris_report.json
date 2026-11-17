@@ -1,0 +1,121 @@
+{
+  "tool": "dataset-curation-qa",
+  "tool_version": "0.1.0",
+  "generated_at_utc": "2026-11-16T22:57:11.978016+00:00",
+  "data_provenance": {
+    "source_file": "iris.csv",
+    "sha256": "6f608b71a7317216319b4d27b4d9bc84e6abd734eda7872b71a458569e2656c0",
+    "bytes": 4551,
+    "rows_checked": 150,
+    "synthetic": false,
+    "license": "CC BY 4.0 (UCI Machine Learning Repository)"
+  },
+  "schema": {
+    "name": "iris_measurements",
+    "version": "1.0.0"
+  },
+  "checks_run": [
+    "schema_conformance",
+    "required_fields",
+    "controlled_vocabulary",
+    "range",
+    "metadata_completeness",
+    "missingness",
+    "duplicates",
+    "outliers",
+    "file_references"
+  ],
+  "summary": {
+    "total_issues": 7,
+    "errors": 0,
+    "warnings": 3,
+    "info": 4,
+    "by_category": {
+      "duplicates": 3,
+      "outlier": 4
+    }
+  },
+  "column_stats": [
+    {
+      "column": "sepal_length",
+      "non_missing": 150,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "sepal_width",
+      "non_missing": 150,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "petal_length",
+      "non_missing": 150,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "petal_width",
+      "non_missing": 150,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "species",
+      "non_missing": 150,
+      "missing": 0,
+      "missing_rate": 0.0
+    }
+  ],
+  "issues": [
+    {
+      "category": "duplicates",
+      "severity": "warning",
+      "row": 35,
+      "column": null,
+      "message": "Row is an exact duplicate of row 10"
+    },
+    {
+      "category": "duplicates",
+      "severity": "warning",
+      "row": 38,
+      "column": null,
+      "message": "Row is an exact duplicate of row 10"
+    },
+    {
+      "category": "duplicates",
+      "severity": "warning",
+      "row": 143,
+      "column": null,
+      "message": "Row is an exact duplicate of row 102"
+    },
+    {
+      "category": "outlier",
+      "severity": "info",
+      "row": 16,
+      "column": "sepal_width",
+      "message": "Value 4.4 lies outside the IQR fence [2.05, 4.05] for column 'sepal_width' (statistical flag, not a defect)"
+    },
+    {
+      "category": "outlier",
+      "severity": "info",
+      "row": 33,
+      "column": "sepal_width",
+      "message": "Value 4.1 lies outside the IQR fence [2.05, 4.05] for column 'sepal_width' (statistical flag, not a defect)"
+    },
+    {
+      "category": "outlier",
+      "severity": "info",
+      "row": 34,
+      "column": "sepal_width",
+      "message": "Value 4.2 lies outside the IQR fence [2.05, 4.05] for column 'sepal_width' (statistical flag, not a defect)"
+    },
+    {
+      "category": "outlier",
+      "severity": "info",
+      "row": 61,
+      "column": "sepal_width",
+      "message": "Value 2.0 lies outside the IQR fence [2.05, 4.05] for column 'sepal_width' (statistical flag, not a defect)"
+    }
+  ]
+}

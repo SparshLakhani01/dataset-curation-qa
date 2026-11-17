@@ -1,0 +1,41 @@
+sample_id,donor_id,tissue,assay,donor_age,donor_sex,file_path,collection_date
+SMP-0001,DON-126,tumor,ATAC-seq,61,unknown,SMP-0001_R1.fastq.gz,2025-11-11
+SMP-0002,DON-173,blood,WES,18,unknown,SMP-0002_R1.fastq.gz,2025-09-21
+SMP-0003,DON-173,normal adjacent tissue,WES,84,male,SMP-0003_R1.fastq.gz,2025-09-12
+SMP-0004,DON-171,normal adjacent tissue,RNA-seq,46,unknown,SMP-0004_R1.fastq.gz,2025-07-13
+SMP-0005,DON-158,,ATAC-seq,44,female,SMP-0005_R1.fastq.gz,2025-04-27
+SMP-0006,DON-174,blood,RNA-seq,45,male,SMP-0006_R1.fastq.gz,2025-08-23
+SMP-0007,DON-120,tumor,WES,49,unknown,SMP-0007_R1.fastq.gz,2025-09-18
+SMP-0008,DON-130,cell line,RNA-seq,39,unknown,SMP-0008_R1.fastq.gz,2025-02-07
+SMP-0009,DON-157,tumor,Proteomics,18,male,SMP-0009_R1.fastq.gz,2025-02-06
+SMP-0010,DON-180,normal adjacent tissue,WGS,72,female,SMP-0010_R1.fastq.gz,2025-07-13
+SMP-0011,DON-197,blood,ATAC-seq,88,unknown,SMP-0011_R1.fastq.gz,2025-02-10
+SMP-0003,DON-149,cell line,WES,80,female,SMP-0012_R1.fastq.gz,2025-01-01
+SMP-0013,DON-108,cell line,WES,21,female,SMP-0013_R1.fastq.gz,2025-01-20
+SMP-0014,DON-130,normal adjacent tissue,WGS,44,male,SMP-0014_R1.fastq.gz,2025-11-23
+SMP-0015,DON-173,blood,ATAC-seq,250,male,SMP-0015_R1.fastq.gz,2025-07-24
+SMP-0016,DON-190,blood,RNA-seq,57,female,SMP-0016_R1.fastq.gz,2025-09-02
+SMP-0017,DON-109,blood,ATAC-seq,28,unknown,SMP-0017_R1.fastq.gz,2025-10-14
+SMP-0018,DON-171,blood,RNA-seq,71,unknown,SMP-0018_R1.fastq.gz,15/03/2025
+SMP-0019,DON-160,tumor,WGS,26,male,SMP-0019_R1.fastq.gz,2025-11-02
+SMP-0020,DON-147,normal adjacent tissue,RNA-seq,44,female,SMP-0020_R1.fastq.gz,2025-12-15
+SMP-ABC,DON-128,normal adjacent tissue,WES,23,unknown,SMP-0021_R1.fastq.gz,2025-04-16
+SMP-0022,DON-188,tumor,WGS,28,unknown,SMP-0022_R1.fastq.gz,2025-09-14
+SMP-0023,DON-134,normal adjacent tissue,ATAC-seq,31,male,SMP-0023_R1.fastq.gz,2025-08-12
+SMP-0024,DON-108,normal adjacent tissue,RNA-seq,38,unknown,SMP-9999_R1.fastq.gz,2025-05-28
+SMP-0025,DON-107,blood,WES,55,female,SMP-0025_R1.fastq.gz,2025-08-17
+SMP-0026,DON-149,blood,RNA-seq,88,unknown,SMP-0026_R1.fastq.gz,2025-12-13
+SMP-0027,DON-149,normal adjacent tissue,WES,48,F,SMP-0027_R1.fastq.gz,2025-07-22
+SMP-0028,DON-174,tumor,WES,63,unknown,SMP-0028_R1.fastq.gz,2025-08-13
+SMP-0029,DON-137,tumor,WGS,58,female,SMP-0029_R1.fastq.gz,2025-04-02
+SMP-0030,,normal adjacent tissue,WGS,46,male,SMP-0030_R1.fastq.gz,2025-06-01
+SMP-0031,DON-154,tumor,RNA-seq,46,female,SMP-0031_R1.fastq.gz,2025-03-10
+SMP-0032,DON-179,blood,RNA-seq,52,male,SMP-0032_R1.fastq.gz,2025-08-11
+SMP-0033,DON-125,normal adjacent tissue,RNA-seq,thirty,male,SMP-0033_R1.fastq.gz,2025-03-08
+SMP-0034,DON-161,cell line,ATAC-seq,25,unknown,SMP-0034_R1.fastq.gz,2025-05-02
+SMP-0035,DON-104,normal adjacent tissue,ATAC-seq,34,male,SMP-0035_R1.fastq.gz,2025-05-26
+SMP-0036,DON-160,cell line,ATAC-seq,37,male,SMP-0036_R1.fastq.gz,2025-02-28
+SMP-0037,DON-147,cell line,RNA-seq,79,unknown,SMP-0037_R1.fastq.gz,2025-07-13
+SMP-0038,DON-194,blood,RNA-seq,44,unknown,SMP-0038_R1.fastq.gz,2025-04-23
+SMP-0039,DON-112,tumor,WGS,56,unknown,SMP-0039_R1.fastq.gz,2025-11-09
+SMP-0002,DON-173,blood,WES,18,unknown,SMP-0002_R1.fastq.gz,2025-09-21

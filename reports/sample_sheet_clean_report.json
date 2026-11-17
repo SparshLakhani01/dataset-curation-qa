@@ -1,0 +1,86 @@
+{
+  "tool": "dataset-curation-qa",
+  "tool_version": "0.1.0",
+  "generated_at_utc": "2026-11-16T22:57:11.839435+00:00",
+  "data_provenance": {
+    "source_file": "synthetic_sample_sheet.csv",
+    "sha256": "c57cb40274324d93caa33bc75f9923d0444be66b212cb158f157cad0a8508428",
+    "bytes": 3222,
+    "rows_checked": 40,
+    "synthetic": true,
+    "license": ""
+  },
+  "schema": {
+    "name": "genomics_sample_sheet",
+    "version": "1.0.0"
+  },
+  "checks_run": [
+    "schema_conformance",
+    "required_fields",
+    "controlled_vocabulary",
+    "range",
+    "metadata_completeness",
+    "missingness",
+    "duplicates",
+    "outliers",
+    "file_references"
+  ],
+  "summary": {
+    "total_issues": 0,
+    "errors": 0,
+    "warnings": 0,
+    "info": 0,
+    "by_category": {}
+  },
+  "column_stats": [
+    {
+      "column": "sample_id",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_id",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "tissue",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "assay",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_age",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_sex",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "file_path",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "collection_date",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    }
+  ],
+  "issues": []
+}

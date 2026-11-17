@@ -1,0 +1,4 @@
+# Only needed for the optional FastAPI service (api.py).
+# The validator core (src/) and CLI are standard-library only.
+fastapi==0.163.1
+uvicorn==0.54.0

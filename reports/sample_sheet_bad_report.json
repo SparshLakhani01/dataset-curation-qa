@@ -1,0 +1,201 @@
+{
+  "tool": "dataset-curation-qa",
+  "tool_version": "0.1.0",
+  "generated_at_utc": "2026-11-16T22:57:11.910167+00:00",
+  "data_provenance": {
+    "source_file": "synthetic_sample_sheet_bad.csv",
+    "sha256": "069f731c7a8aaa2f12cb71af99f9f247503774ed9714f68164c5a6eb1c122d6b",
+    "bytes": 3192,
+    "rows_checked": 40,
+    "synthetic": true,
+    "license": ""
+  },
+  "schema": {
+    "name": "genomics_sample_sheet",
+    "version": "1.0.0"
+  },
+  "checks_run": [
+    "schema_conformance",
+    "required_fields",
+    "controlled_vocabulary",
+    "range",
+    "metadata_completeness",
+    "missingness",
+    "duplicates",
+    "outliers",
+    "file_references"
+  ],
+  "summary": {
+    "total_issues": 15,
+    "errors": 13,
+    "warnings": 1,
+    "info": 1,
+    "by_category": {
+      "controlled_vocabulary": 2,
+      "duplicates": 3,
+      "file_reference": 1,
+      "metadata": 2,
+      "outlier": 1,
+      "range": 1,
+      "required_field": 2,
+      "schema": 3
+    }
+  },
+  "column_stats": [
+    {
+      "column": "sample_id",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_id",
+      "non_missing": 39,
+      "missing": 1,
+      "missing_rate": 0.025
+    },
+    {
+      "column": "tissue",
+      "non_missing": 39,
+      "missing": 1,
+      "missing_rate": 0.025
+    },
+    {
+      "column": "assay",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_age",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "donor_sex",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "file_path",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    },
+    {
+      "column": "collection_date",
+      "non_missing": 40,
+      "missing": 0,
+      "missing_rate": 0.0
+    }
+  ],
+  "issues": [
+    {
+      "category": "controlled_vocabulary",
+      "severity": "error",
+      "row": 9,
+      "column": "assay",
+      "message": "Value 'Proteomics' is not in the 'assay' controlled vocabulary ['ATAC-seq', 'RNA-seq', 'WES', 'WGS']"
+    },
+    {
+      "category": "controlled_vocabulary",
+      "severity": "error",
+      "row": 27,
+      "column": "donor_sex",
+      "message": "Value 'F' is not in the 'sex' controlled vocabulary ['female', 'male', 'unknown']"
+    },
+    {
+      "category": "duplicates",
+      "severity": "error",
+      "row": 12,
+      "column": "sample_id",
+      "message": "Duplicate primary key ('SMP-0003',) (first seen in row 3)"
+    },
+    {
+      "category": "duplicates",
+      "severity": "warning",
+      "row": 40,
+      "column": null,
+      "message": "Row is an exact duplicate of row 2"
+    },
+    {
+      "category": "duplicates",
+      "severity": "error",
+      "row": 40,
+      "column": "sample_id",
+      "message": "Duplicate primary key ('SMP-0002',) (first seen in row 2)"
+    },
+    {
+      "category": "file_reference",
+      "severity": "error",
+      "row": 24,
+      "column": "file_path",
+      "message": "Referenced file 'SMP-9999_R1.fastq.gz' does not exist under '/home/hatch/workspace/projects/dataset-curation-qa/data/files'"
+    },
+    {
+      "category": "metadata",
+      "severity": "error",
+      "row": null,
+      "column": null,
+      "message": "Required dataset metadata field 'creator' is missing or empty"
+    },
+    {
+      "category": "metadata",
+      "severity": "error",
+      "row": null,
+      "column": null,
+      "message": "Required dataset metadata field 'license' is missing or empty"
+    },
+    {
+      "category": "outlier",
+      "severity": "info",
+      "row": 15,
+      "column": "donor_age",
+      "message": "Value 250 lies outside the IQR fence [-8, 100] for column 'donor_age' (statistical flag, not a defect)"
+    },
+    {
+      "category": "range",
+      "severity": "error",
+      "row": 15,
+      "column": "donor_age",
+      "message": "Value 250 exceeds maximum 110"
+    },
+    {
+      "category": "required_field",
+      "severity": "error",
+      "row": 5,
+      "column": "tissue",
+      "message": "Required field 'tissue' is empty"
+    },
+    {
+      "category": "required_field",
+      "severity": "error",
+      "row": 30,
+      "column": "donor_id",
+      "message": "Required field 'donor_id' is empty"
+    },
+    {
+      "category": "schema",
+      "severity": "error",
+      "row": 18,
+      "column": "collection_date",
+      "message": "Value '15/03/2025' is not a valid date"
+    },
+    {
+      "category": "schema",
+      "severity": "error",
+      "row": 21,
+      "column": "sample_id",
+      "message": "Value 'SMP-ABC' does not match pattern '^SMP-[0-9]{4}$'"
+    },
+    {
+      "category": "schema",
+      "severity": "error",
+      "row": 33,
+      "column": "donor_age",
+      "message": "Value 'thirty' is not a valid integer"
+    }
+  ]
+}

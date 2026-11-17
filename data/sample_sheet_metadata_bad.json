@@ -1,0 +1,1 @@
+{"description":"SYNTHETIC. Identical in shape to sample_sheet_metadata.json but deliberately missing the required 'creator' and 'license' fields, to demonstrate the metadata-completeness check.","keywords":["synthetic","sample sheet","demo"],"title":"Synthetic genomics sample sheet with defective metadata (demo data)","version":"1.0.0"}
